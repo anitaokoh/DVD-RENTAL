@@ -96,7 +96,7 @@ USING(customer_id)
 GROUP BY 1
 ORDER BY 2 DESC;
 
-/*Question 6:What are the top 5 customers per total sales and can we get their detail just in case Rent A Film want to reward them?*/
+/*Question 6:Who are the top 5 customers per total sales and can we get their detail just in case Rent A Film want to reward them?*/
 
 WITH t1 AS (SELECT *, first_name || ' ' || last_name AS full_name
 		    FROM customer)
